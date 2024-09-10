@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="calculadora">
+      <div class="titulo">Calculadora</div>
+      <input type="text" class="tela" [value]="tela" readonly>
+      <div class="botoes">
+        <button (click)="limpar()" class="double">C</button>
+        <button (click)="apagarNumero()">⌫</button>
+        <button (click)="operar('/')" class="operacao">/</button>
+
+        <button (click)="adicionarValor('7')">7</button>
+        <button (click)="adicionarValor('8')">8</button>
+        <button (click)="adicionarValor('9')">9</button>
+        <button (click)="operar('*')" class="operacao">*</button>
+
+        <button (click)="adicionarValor('4')">4</button>
+        <button (click)="adicionarValor('5')">5</button>
+        <button (click)="adicionarValor('6')">6</button>
+        <button (click)="operar('-')" class="operacao">-</button>
+
+        <button (click)="adicionarValor('1')">1</button>
+        <button (click)="adicionarValor('2')">2</button>
+        <button (click)="adicionarValor('3')">3</button>
+        <button (click)="operar('+')" class="operacao">+</button>
+
+        <button (click)="adicionarValor('.')">.</button>
+        <button (click)="adicionarValor('0')">0</button>
+        <button (click)="calcular()" class="double">=</button>
+      </div>
+    </div>
+  </div>
+  

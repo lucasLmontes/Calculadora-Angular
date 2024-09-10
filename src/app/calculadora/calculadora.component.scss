@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 91vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-bottom: -8px;
+  margin-right: -8px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.titulo {
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tela {
+  height: 50px;
+  width: 100%;
+  font-size: 24px;
+  text-align: right;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 18px;
+  background-color: #e7e7e7;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d6d6d6;
+}
+
+button.double {
+  grid-column: span 2;
+}
+
+button.operacao {
+  background-color: #0f1310;
+  color: white;
+}
+
+button.operacao:hover {
+  background-color: #050706;
+}
